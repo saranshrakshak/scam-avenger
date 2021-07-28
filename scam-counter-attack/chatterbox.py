@@ -14,6 +14,7 @@ import speech_recognition as sr
 import os
 
 #changing format of incoming file from .m4a (or other) to .wav
+#returns a AudioSegment object
 def convert_to_wav(filename):
     filename = 'audio_files/' + filename
     new_name = filename.split(".")[0] + ".wav"
