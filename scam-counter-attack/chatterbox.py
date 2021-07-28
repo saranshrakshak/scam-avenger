@@ -4,8 +4,7 @@
 # pip3 install nltk
 # pip3 install ffmpeg, ffprobe, ffplay from command line
 # and download from https://ffmpeg.org/download.html
-# pretrained sentiment models
-# nltk.download("punkt")
+# sentiment models
 # nltk.download("vader_lexicon")
 
 from pydub import AudioSegment
@@ -23,11 +22,16 @@ def convert_to_wav(filename):
         audio = AudioSegment.from_file(filename)
         audio.export(new_name, format='wav')
         print('Converting <<', filename, '>> to <<', new_name, '>> and removing original.')
+        loudness = audio.dBFS
+        print('Conversation Volume(Loudness): ', loudness)
         os.remove(filename) #saves space, less search time
         return new_name
     else:
         if os.path.exists(new_name):
             print('File <<', filename, '>> already converted to .wav and removed.')
+            audio = AudioSegment.from_file(new_name)
+            loudness = audio.dBFS
+            print('Conversation Volume(Loudness): ', loudness)
             return new_name
         else:
             print('File <<', filename, '>> non-existent.')
@@ -44,7 +48,6 @@ def transcribe_audio(wav_file):
             audio_data = recognizer.record(source)
         # Return the transcribed text
         audio_text = recognizer.recognize_google(audio_data)
-        print(wav_file, ':', audio_text)
         return audio_text
     except FileNotFoundError:
         print('FileNotFoundError')
@@ -53,6 +56,7 @@ def transcribe_audio(wav_file):
 #sentiment analysis of speaker's text
 def analyze_text(text_file):
     intensity = SentimentIntensityAnalyzer()
+    print('Conversation Transcription:', text_file)
     print(intensity.polarity_scores(text_file))
     return intensity.polarity_scores(text_file)
 

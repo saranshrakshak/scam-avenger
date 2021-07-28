@@ -5,4 +5,6 @@ def sentiment_runner(filename):
     text_audio = transcribe_audio(test_audio)
     return analyze_text(text_audio)
 
-sentiment_runner('happy_angry.m4a')
+sentiment_runner('yelling_test.m4a')
+sentiment_runner('quiet_test.m4a')
+sentiment_runner('long_yelling.m4a')
