@@ -12,7 +12,8 @@ import nltk
 from pydub import AudioSegment
 import speech_recognition as sr
 import os
-# retry git
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
 #changing format of incoming file from .m4a (or other) to .wav
 #returns a AudioSegment object
 def convert_to_wav(filename):
@@ -24,17 +25,18 @@ def convert_to_wav(filename):
         audio.export(new_name, format='wav')
         print('Converting ', filename, 'to', new_name, '.')
         os.remove(filename) #saves space, less search time
-        return AudioSegment.from_file(new_name)
+        return new_name
     else:
         if os.path.exists(new_name):
             print('File [', filename, '] already converted and removed.')
-            return AudioSegment.from_file(new_name)
+            return new_name
         else:
             print('File [', filename, '] non-existent.')
             return False
 
 #converting spoken words to text
 def transcribe_audio(filename):
+    #filename = 'audio_files/' + filename
     #take in a .wav format file and convert to text
     recognizer = sr.Recognizer()
     # Import the audio file and convert to audio data
@@ -49,4 +51,12 @@ def transcribe_audio(filename):
     except:
         FileNotFoundError
         print('Keep scanning for audio.')
+
+
+#sentiment analysis of speaker's text
+def analyze_text(text_file):
+    intensity = SentimentIntensityAnalyzer()
+    print(intensity.polarity_scores(text_file))
+    return intensity.polarity_scores(text_file)
+
 
