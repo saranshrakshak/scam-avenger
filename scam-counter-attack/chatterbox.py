@@ -35,18 +35,17 @@ def convert_to_wav(filename):
             return False
 
 #converting spoken words to text
-def transcribe_audio(filename):
-    #filename = 'audio_files/' + filename
+def transcribe_audio(wav_file):
     #take in a .wav format file and convert to text
     recognizer = sr.Recognizer()
     # Import the audio file and convert to audio data
     try:
-        audio_file = sr.AudioFile(filename)
+        audio_file = sr.AudioFile(wav_file)
         with audio_file as source:
             audio_data = recognizer.record(source)
         # Return the transcribed text
         audio_text = recognizer.recognize_google(audio_data)
-        print(filename, ':', audio_text)
+        print(wav_file, ':', audio_text)
         return audio_text
     except:
         FileNotFoundError
