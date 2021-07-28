@@ -46,8 +46,7 @@ def transcribe_audio(wav_file):
         audio_text = recognizer.recognize_google(audio_data)
         print(wav_file, ':', audio_text)
         return audio_text
-    except:
-        FileNotFoundError
+    except FileNotFoundError:
         print('FileNotFoundError')
 
 
