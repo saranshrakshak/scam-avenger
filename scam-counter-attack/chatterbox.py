@@ -49,7 +49,7 @@ def transcribe_audio(wav_file):
         return audio_text
     except:
         FileNotFoundError
-        print('Keep scanning for audio.')
+        print('FileNotFoundError')
 
 
 #sentiment analysis of speaker's text
