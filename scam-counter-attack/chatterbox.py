@@ -58,4 +58,4 @@ def analyze_text(text_file):
     print(intensity.polarity_scores(text_file))
     return intensity.polarity_scores(text_file)
 
-
+###test githiegaw
