@@ -8,7 +8,6 @@
 # nltk.download("punkt")
 # nltk.download("vader_lexicon")
 
-import nltk
 from pydub import AudioSegment
 import speech_recognition as sr
 import os
@@ -23,15 +22,15 @@ def convert_to_wav(filename):
     if os.path.exists(filename):
         audio = AudioSegment.from_file(filename)
         audio.export(new_name, format='wav')
-        print('Converting ', filename, 'to', new_name, '.')
+        print('Converting <<', filename, '>> to <<', new_name, '>> and removing original.')
         os.remove(filename) #saves space, less search time
         return new_name
     else:
         if os.path.exists(new_name):
-            print('File [', filename, '] already converted and removed.')
+            print('File <<', filename, '>> already converted to .wav and removed.')
             return new_name
         else:
-            print('File [', filename, '] non-existent.')
+            print('File <<', filename, '>> non-existent.')
             return False
 
 #converting spoken words to text
@@ -58,4 +57,3 @@ def analyze_text(text_file):
     print(intensity.polarity_scores(text_file))
     return intensity.polarity_scores(text_file)
 
-###test githiegaw
