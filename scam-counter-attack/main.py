@@ -1,10 +1,20 @@
 from chatterbox import *
+import os
+import numpy as np
+import pandas as pd
 
-def sentiment_runner(filename):
-    test_audio = convert_to_wav(filename)
-    text_audio = transcribe_audio(test_audio)
-    return analyze_text(text_audio)
 
-sentiment_runner('yelling_test.m4a')
-sentiment_runner('quiet_test.m4a')
-sentiment_runner('long_yelling.m4a')
+
+def file_runner(filename):
+    return analyze_text(transcribe_audio(convert_to_wav(filename)))
+
+
+def run_all_audio():
+    all_files = np.array(os.listdir('audio_files'))
+    print('Files that will be run:', all_files)
+    for i in all_files:
+        if i != '.DS_Store':
+            file_runner(i)
+
+
+run_all_audio()

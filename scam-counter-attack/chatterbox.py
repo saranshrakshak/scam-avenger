@@ -16,9 +16,9 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 #returns a AudioSegment object
 def convert_to_wav(filename):
     filename = 'audio_files/' + filename
-    new_name = filename.split(".")[0] + ".wav"
 
-    if os.path.exists(filename):
+    if filename.split('.')[1] == '.m4a':
+        new_name = filename.split(".")[0] + ".wav"
         audio = AudioSegment.from_file(filename)
         audio.export(new_name, format='wav')
         print('Converting <<', filename, '>> to <<', new_name, '>> and removing original.')
@@ -27,36 +27,34 @@ def convert_to_wav(filename):
         os.remove(filename) #saves space, less search time
         return new_name
     else:
-        if os.path.exists(new_name):
+        if os.path.exists(filename):
             print('File <<', filename, '>> already converted to .wav and removed.')
-            audio = AudioSegment.from_file(new_name)
+            audio = AudioSegment.from_file(filename)
             loudness = audio.dBFS
             print('Conversation Volume(Loudness): ', loudness)
-            return new_name
+            return filename
         else:
             print('File <<', filename, '>> non-existent.')
             return False
 
 #converting spoken words to text
 def transcribe_audio(wav_file):
-    #take in a .wav format file and convert to text
+    if not wav_file: return False
     recognizer = sr.Recognizer()
     # Import the audio file and convert to audio data
-    try:
-        audio_file = sr.AudioFile(wav_file)
-        with audio_file as source:
-            audio_data = recognizer.record(source)
-        # Return the transcribed text
-        audio_text = recognizer.recognize_google(audio_data)
-        return audio_text
-    except FileNotFoundError:
-        print('FileNotFoundError')
+    audio_file = sr.AudioFile(wav_file)
+    with audio_file as source:
+        audio_data = recognizer.record(source)
+    # Return the transcribed text
+    audio_text = recognizer.recognize_google(audio_data)
+    return audio_text
 
 
 #sentiment analysis of speaker's text
 def analyze_text(text_file):
+    if not text_file: return False
     intensity = SentimentIntensityAnalyzer()
     print('Conversation Transcription:', text_file)
-    print(intensity.polarity_scores(text_file))
+    print('Conversation Sentiment: ', intensity.polarity_scores(text_file))
     return intensity.polarity_scores(text_file)
 
