@@ -3,10 +3,14 @@ import os
 import numpy as np
 import pandas as pd
 
-
-
+full_convo_df = pd.DataFrame()
 def file_runner(filename):
-    return analyze_text(transcribe_audio(convert_to_wav(filename)))
+    wav_file = convert_to_wav(filename)
+    volume_file = get_volume(wav_file)
+    text_file = transcribe_audio(wav_file)
+    sentiment_file = analyze_text(text_file)
+    print(wav_file, volume_file, text_file, sentiment_file)
+    return #wav_file, volume_file, text_file, sentiment_file
 
 
 def run_all_audio():
