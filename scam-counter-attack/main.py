@@ -3,14 +3,17 @@ import os
 import numpy as np
 import pandas as pd
 
-full_convo_df = pd.DataFrame()
+full_dataframe = pd.DataFrame()
+
 def file_runner(filename):
     wav_file = convert_to_wav(filename)
     volume_file = get_volume(wav_file)
     text_file = transcribe_audio(wav_file)
     sentiment_file = analyze_text(text_file)
+
     print(wav_file, volume_file, text_file, sentiment_file)
-    return #wav_file, volume_file, text_file, sentiment_file
+    full_dataframe.add(pd.Series([wav_file, volume_file, text_file, sentiment_file]))
+    return  #wav_file, volume_file, text_file, sentiment_file
 
 
 def run_all_audio():
@@ -21,4 +24,5 @@ def run_all_audio():
             file_runner(i)
 
 
-run_all_audio()
+#run_all_audio()
+print(full_dataframe)
