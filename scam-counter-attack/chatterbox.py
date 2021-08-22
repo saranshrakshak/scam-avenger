@@ -4,12 +4,12 @@
 # pip3 install nltk
 # pip3 install ffmpeg, ffprobe, ffplay from command line
 # and download from https://ffmpeg.org/download.html
-# sentiment models
+# sentiment models:
 # nltk.download("vader_lexicon")
-
 from pydub import AudioSegment
 import speech_recognition as sr
 import os
+import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 #changing format of incoming file from .m4a (or other) to .wav
@@ -52,4 +52,3 @@ def analyze_text(text_file):
     #print('Conversation Transcription:', text_file)
     #print('Conversation Sentiment: ', intensity.polarity_scores(text_file))
     return intensity.polarity_scores(text_file)
-
