@@ -3,6 +3,7 @@ from chatterbox import *
 import os
 import numpy as np
 import pandas as pd
+from response import *
 
 call_df = pd.DataFrame(columns = ['scam_audio', 'scam_volume', 'scam_text', 'scam_sentiment'])
 
@@ -45,8 +46,5 @@ def newest_file():
 
 
 run_all_audio()
-file_runner(newest_file())  # test to avoid duplicate files
 
 #print('CallDF: ', call_df, type(call_df), call_df.columns)
-
-run_all_audio()
