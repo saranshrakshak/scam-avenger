@@ -47,12 +47,10 @@ def transcribe_audio(wav_file):
 
 # sentiment analysis of speaker's text
 def analyze_text(text_file):
-    if not text_file:
-        return False
+    if not text_file: return False
     intensity = SentimentIntensityAnalyzer().polarity_scores(text_file)
     return intensity
 
 
 def get_volume(filename):
-    # print('Volume score: ', AudioSegment.from_file(filename).dBFS)
     return AudioSegment.from_file(filename).dBFS
