@@ -1,5 +1,7 @@
 # Scam Avenger
-# Saransh Rakshak
+Saransh Rakshak
+srakshak@berkeley.edu
+
 
 
 
