@@ -26,3 +26,5 @@ for i in train_sentences:
 words_spoken_series = pd.Series(words_spoken_list).value_counts()
 print(words_spoken_list)
 print(words_spoken_series)
+#bdbrd
+
