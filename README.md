@@ -1,1 +1,1 @@
-# scam-defense
+# Scam Avenger
