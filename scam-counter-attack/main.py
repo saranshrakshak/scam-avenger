@@ -30,13 +30,12 @@ def file_runner(filename):
 def run_all_audio():
     all_files = np.array(os.listdir('audio_files'))
     all_files = all_files[all_files != '.DS_Store']
-
     print(len(all_files), 'files will be run:', all_files)
 
     for i in all_files:
         if i != '.DS_Store':
-            # print(' ------- RUNNING NEW AUDIO FILE ------- ')
-            # print('File: ' + i)
+            print(' ------- RUNNING NEW AUDIO FILE ------- ')
+            print('File: ' + i)
             file_runner(i)
 
 

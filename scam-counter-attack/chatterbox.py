@@ -33,10 +33,6 @@ def convert_to_wav(filename):
             return filename.split(".")[0] + ".wav"
 
 
-def get_volume(filename):
-    # print('Volume score: ', AudioSegment.from_file(filename).dBFS)
-    return AudioSegment.from_file(filename).dBFS
-
 
 # converting spoken words to text
 def transcribe_audio(wav_file):
@@ -54,6 +50,11 @@ def analyze_text(text_file):
     if not text_file:
         return False
     intensity = SentimentIntensityAnalyzer()
-    # print('Conversation Transcription:', text_file)
-    # print('Conversation Sentiment: ', intensity.polarity_scores(text_file))
+    print(' ------- NEW AUDIO FILE ------- ')
+    print('Conversation Transcription:', text_file)
+    print('Conversation Sentiment: ', intensity.polarity_scores(text_file))
     return intensity.polarity_scores(text_file)
+
+def get_volume(filename):
+    # print('Volume score: ', AudioSegment.from_file(filename).dBFS)
+    return AudioSegment.from_file(filename).dBFS
