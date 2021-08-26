@@ -56,4 +56,4 @@ def show_audio_df():
 
 
 
-run_all_audio(info_print = False)
+run_all_audio(info_print = True)
