@@ -61,7 +61,7 @@ Additionally, I will set up a virtual machine, so that I can give the appearance
 #
 ## set up go fund me
 ## maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
-# :shit:
+# :shit: :headphones: :heavy_minus_sign: :telephone_receiver:
 
 
 
