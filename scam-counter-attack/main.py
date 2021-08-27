@@ -1,5 +1,5 @@
 # main file for running audio files located in audio_files/
-
+# ROOT ORIGIN IS MASTER NOT MAIN (GIT)
 import glob
 from chatterbox import *
 import os
