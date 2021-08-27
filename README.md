@@ -9,7 +9,7 @@ Scammers primarily target the elderly and young children - two age groups who ar
 
 The initial call is automated, but the call back number almost always transfers to a call center in India or Nigeria. As they are spoofing for local area codes(so it doesn't show as 'scam likely') the number frequently changes, and cannot be reached after they leave a few voicemails and change to a new number.
 
-This project will work towards calling back these numbers immediately, and talking to the scammers for as long as possible using Pydub & SpeechRecognition, pre-recorded responses in different voice accents such as an old man and a child, as well as volume and Sentiment analysis information to see the 'anger level' of the scammer. (I've always wanted to be a voice actor for TV shows so I'm having a lot of fun with the voices.)
+This project will work towards calling back these numbers immediately, and talking to the scammers for as long as possible using Pydub & SpeechRecognition, pre-recorded responses in different voice accents such as an old man and a child, as well as volume and Sentiment analysis information to see the 'anger level' of the scammer. (I've always wanted to be a voice actor for TV shows so I'm having a lot of fun with the voices).
 
 My goal is, the more time the scammers talk to pre-recordings of me, the less they can spend scamming actual people for money.
 
