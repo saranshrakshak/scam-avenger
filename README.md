@@ -65,5 +65,4 @@ Additionally, I will set up a virtual machine, so that I can give the appearance
 # :shit: :headphones: :heavy_minus_sign: :telephone_receiver:
 # add support for scan scam (QR code and BitCoin)
 
-
-
+# contact FTC for scam number database
