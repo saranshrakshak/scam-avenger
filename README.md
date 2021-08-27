@@ -24,7 +24,7 @@ As most scammers follow a very similar script, I generally know the two main pro
 
 A. (Visual Scam) Ask the victim to log into bank account, and using inspect element to change the visual values of their account funds, sill state the money will be withheld without payment
 
-B. (Visual Scam) Ask the victim to log into a bank account. Here the scammer will transfer money quickly between savings and credit, giving the appearance of money loss, then stating money will be withheld without payment. ##(TOCTOU shit)
+B. (Visual Scam) Ask the victim to log into a bank account. Here the scammer will transfer money quickly between savings and credit, giving the appearance of money loss, then stating money will be withheld without payment. --> ##(TOCTOU shit)
 
 C. (Refund Scam) Scammer will run a program on the Terminal/Command line that gives the appearance of money refund taking place, and that the victim has full control of the money transfer (no actual money transfer takes place). When the victim enters the amount to be refunded, an additional 0 will be added to the input giving the appearance that the victim has transferred x10 the asked for refund from the scammers account to the victims personal account. The scammer will then desperately beg the victim to transfer the money back via gift cards, stating that the victim cannot simply transfer back the 'money' via the old command line method or a bank transfer method, and will often negotiate a smaller amount in gift cards out of desperation for getting anything. Scammer may also use the inspect element on bank account webpage to edit the appearance that money has been transferred.
 
