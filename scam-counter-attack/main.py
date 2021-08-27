@@ -9,7 +9,6 @@ from response import *
 
 call_df = pd.DataFrame(columns=['scam_audio', 'scam_volume', 'scam_text', 'scam_sentiment'])
 
-
 def file_runner(filename, info_print):
     global call_df
     wav_file = convert_to_wav(filename)
@@ -29,7 +28,6 @@ def file_runner(filename, info_print):
         if info_print: show_file_info(wav_file, text_file, sentiment_file)
         return dict_row
 
-
 # run all files in audio_files
 def run_all_audio(info_print):
     all_files = np.array(os.listdir('audio_files'))
@@ -38,12 +36,10 @@ def run_all_audio(info_print):
     for i in all_files:
         file_runner(i, info_print)
 
-
 # get newest file added to audio_files
 def newest_file():
     new_file = max(glob.glob('audio_files/*'), key=os.path.getctime)
     return new_file.split('/')[1]
-
 
 def show_file_info(wav_file, text_file, sentiment_file):
     print(' ------- RUNNING NEW AUDIO FILE ------- ')
@@ -53,7 +49,5 @@ def show_file_info(wav_file, text_file, sentiment_file):
 
 def show_audio_df():
     print('CallDF: ', call_df, type(call_df), call_df.columns)
-
-
 
 run_all_audio(info_print = True)

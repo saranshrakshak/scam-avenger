@@ -9,7 +9,6 @@ past_calls_list = os.listdir('train_calls/')
 past_calls_list.remove('.DS_Store')
 print('Training calls to be analyzed:', past_calls_list)
 
-
 # returns a sentence for each word in text as type dataframe
 def analyze_past_sentences():
     sentence_df = pd.DataFrame(columns=['sentence', 'sentiment', 'origin_file'])
@@ -36,7 +35,6 @@ def analyze_past_words():
         words_spoken_list = string_train.split(' ')  # split words by spacing
 
         while '' in words_spoken_list: words_spoken_list.remove('')  # remove whitespace
-
 
     word_series = pd.Series(data = words_spoken_list)
     word_series = word_series.value_counts()

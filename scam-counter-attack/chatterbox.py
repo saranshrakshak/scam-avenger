@@ -13,7 +13,6 @@ import speech_recognition as sr
 import os
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-
 # changing format of incoming file from .m4a (or other) to .wav
 # returns a AudioSegment object
 def convert_to_wav(filename):
@@ -33,7 +32,6 @@ def convert_to_wav(filename):
             # print('File <<', filename, '>> non-existent.')
             return filename.split(".")[0] + ".wav"
 
-
 # converting spoken words to text
 def transcribe_audio(wav_file):
     if not wav_file: return False
@@ -44,13 +42,11 @@ def transcribe_audio(wav_file):
         audio_data = recognizer.record(source)
     return recognizer.recognize_google(audio_data)
 
-
 # sentiment analysis of speaker's text
 def analyze_text(text_file):
     if not text_file: return False
     intensity = SentimentIntensityAnalyzer().polarity_scores(text_file)
     return intensity
-
 
 def get_volume(filename):
     return AudioSegment.from_file(filename).dBFS
