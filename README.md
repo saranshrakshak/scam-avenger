@@ -52,3 +52,8 @@ I'm also utilizing previously recorded scam calls on youtube, there are a few fa
 Additionally, I will set up a virtual machine, so that I can give the appearance of complying with the scammers instructions while they run the scam. I am also in the process of creating a fake web page for a bank to log into while talking to the scammer. 
 
 
+
+######
+## FIGURE SHIT OUT ABOUT SECURITITTY
+
+
