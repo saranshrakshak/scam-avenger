@@ -63,7 +63,7 @@ Additionally, I will set up a virtual machine, so that I can give the appearance
 ## maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
 ## can do links and emojis in README  
 # :shit: :headphones: :heavy_minus_sign: :telephone_receiver:
-
+# add support for scan scam (QR code and BitCoin)
 
 
 
