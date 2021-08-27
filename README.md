@@ -3,7 +3,7 @@ Saransh Rakshak
 srakshak@berkeley.edu
 
 
-PROJECT DESCRIPTION:
+# __PROJECT DESCRIPTION:__
 
 Scammers primarily target the elderly and young children - two age groups who are the most likely to succumb to high-pressure scam tactics and lose hundreds if not thousands. I have personally been bombarded by calls, asking to get a 'refund for my auto insurance' or 'court order house arrest unless payment by gift card', and I can see how it can easily excite or alarm somebody who may be unaware of the scam. 
 
@@ -52,6 +52,7 @@ I'm also utilizing previously recorded scam calls on youtube, there are a few fa
 Additionally, I will set up a virtual machine, so that I can give the appearance of complying with the scammers instructions while they run the scam. I am also in the process of creating a fake web page for a bank to log into while talking to the scammer. 
 
 
+
 # ------- NOTES -------
 
 
@@ -60,6 +61,7 @@ Additionally, I will set up a virtual machine, so that I can give the appearance
 #
 ## set up go fund me
 ## maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
+# :shit:
 
 
 
