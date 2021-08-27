@@ -2,7 +2,6 @@
 Saransh Rakshak
 srakshak@berkeley.edu
 
-
 # __PROJECT DESCRIPTION:__
 
 Scammers primarily target the elderly and young children - two age groups who are the most likely to succumb to high-pressure scam tactics and lose hundreds if not thousands. I have personally been bombarded by calls, asking to get a 'refund for my auto insurance' or 'court order house arrest unless payment by gift card', and I can see how it can easily excite or alarm somebody who may be unaware of the scam. 
