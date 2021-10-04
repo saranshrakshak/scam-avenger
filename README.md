@@ -1,6 +1,6 @@
 
 
-#☢️NOTES :
+# ☢️NOTES :
 Set up webpage (later)about company
 FIGURE SHIT OUT ABOUT SECURITY
 set up go fund me eventually add support for scan scam (QR code 4 crypto/cashappe etc) on company webpage 
