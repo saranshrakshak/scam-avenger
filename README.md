@@ -1,3 +1,24 @@
+
+
+# ------- NOTES -------
+FIGURE SHIT OUT ABOUT SECURITY
+
+set up go fund me eventually
+    maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
+
+can do links and emojis in README  ♋️
+
+add support for scan scam (QR code 4 BitCoin)
+
+contact FTC/find poc for scammer number database?
+
+idea for PART 2 :
+Scammer Recruiter - Beta
+Company that would hire these scammers after the call 
+pay them/bribe them for knowledge 
+possibly recruit for paid online education course for elderly and young kids (scam awareness, prevention, and spread of knowledge).
+
+
 # Scam Avenger
 Saransh Rakshak
 srakshak@berkeley.edu
@@ -49,29 +70,4 @@ I am planning on using multiple google numbers and essentially waiting for scam 
 I'm also utilizing previously recorded scam calls on youtube, there are a few famous YouTubers (such as KitBoga and Jim Browning) who frequently call back scammers and mess with them (I highly recommend checking Jim Browning out; he is an amazing person). I am taking YouTube's auto-generated subtitles from these channels and grouping common trigger words that are used by the scammer(from scammers script or general template), to train the proper pre-recorded responses from the same voice actor. 
 
 Additionally, I will set up a virtual machine, so that I can give the appearance of complying with the scammers instructions while they run the scam. I am also in the process of creating a fake web page for a bank to log into while talking to the scammer. 
-
-
-
-# ------- NOTES -------
-
-
-######
-## FIGURE SHIT OUT ABOUT SECURITITTY
-#
-## set up go fund me
-## maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
-## can do links and emojis in README  
-# :shit: :headphones: :heavy_minus_sign: :telephone_receiver:
-# add support for scan scam (QR code 4 BitCoin)
-
-# contact FTC for scam number database
-
-
-
-
-PART 2 :
-Scammer Recruiter - Beta
-Company that would hire these scammers after the call 
-pay them/bribe them for knowledge 
-possibly recruit for paid online education course for elderly and young kids (scam awareness, prevention, and spread of knowledge).
 
