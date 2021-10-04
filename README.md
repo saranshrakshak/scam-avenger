@@ -1,9 +1,8 @@
 
 
-# ------- NOTES -------
+#☢️NOTES :
 Set up webpage (later)about company
 FIGURE SHIT OUT ABOUT SECURITY
-
 set up go fund me eventually add support for scan scam (QR code 4 crypto/cashappe etc) on company webpage 
     maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
 
@@ -47,11 +46,18 @@ As most scammers follow a very similar script, I generally know the two main pro
 
         C. (Refund Scam) Scammer will run a program on the Terminal/Command line that gives the appearance of money refund taking place, and that the victim has full control of the money transfer (no actual money transfer takes place). When the victim enters the amount to be refunded, an additional 0 will be added to the input giving the appearance that the victim has transferred x10 the asked for refund from the scammers account to the victims personal account. The scammer will then desperately beg the victim to transfer the money back via gift cards, stating that the victim cannot simply transfer back the 'money' via the old command line method or a bank transfer method, and will often negotiate a smaller amount in gift cards out of desperation for getting anything. Scammer may also use the inspect element on bank account webpage to edit the appearance that money has been transferred.
 
-        D. (Refund Scam) Ask the victim to log into bank account, and using inspect element to show that scammer has sent too much money and will lose their job, and that the victim must transfer gift cards to help the scammers family survive (or any other desperate situation the scammer thinks up of).  
+        D. (Refund Scam) Ask the victim to log into bank account, and using inspect element to show that scammer 
+        has sent too much money and will lose their job, and that the victim must transfer gift cards to help the scammers 
+        family survive (or any other desperate situation the scammer thinks up of).  
 
-        E. (Stolen Info Scam) Scammer will hide all files from the user's desktop, and state that the victim's comp files/ personal information/bank account/etc. will be withheld until gift card payment is given. 
+        E. (Stolen Info Scam) Scammer will hide all files from the user's desktop, and state that the victim's comp
+        files/ personal information/bank account/etc. will be withheld until gift card payment is given. 
 
-        F. (Legal Action Scam) Scammer will call the victim threatening . May pull up a fake webpage or inspect elements on victims bank account page stating money will be withheld without gift card payment similar to the Refund Scam, or may hide files like in the Stolen Info Scam. This is probably the most barbaric method in comparison to the others, but is still one of the most effective nonetheless. 
+        F. (Legal Action Scam) Scammer will call the victim threatening Gov action. 
+        May pull up a fake webpage or inspect elements on victims bank account page stating money 
+        will be withheld without gift card payment similar to the Refund Scam, or may hide files like in the Stolen Info Scam.
+        
+            This is probably the most barbaric method in comparison to the others, but is still one of the most effective nonetheless. 
 
 4) Scammer will then ask the victim to drive to a nearby store to purchase gift cards, and will stay on the phone with the victim throughout the process (I will play fake driving sounds and extend the drive time to increase conversation time).
 
