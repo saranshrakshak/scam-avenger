@@ -65,3 +65,13 @@ Additionally, I will set up a virtual machine, so that I can give the appearance
 # add support for scan scam (QR code 4 BitCoin)
 
 # contact FTC for scam number database
+
+
+
+
+PART 2 :
+Scammer Recruiter - Beta
+Company that would hire these scammers after the call 
+pay them/bribe them for knowledge 
+possibly recruit for paid online education course for elderly and young kids (scam awareness, prevention, and spread of knowledge).
+
