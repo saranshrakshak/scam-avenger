@@ -77,24 +77,24 @@ As most scammers follow a very similar script, I generally know some common proc
 6) Few scammers will stay on the phone and give the appearance of keeping 'honest' with their agreement by refreshing the victim's bank account page (which they had edited using inspect element) thus returning the actual values in the victim's bank account, or will retransfer the victim's computer files which the scammer had hidden in a different folder, back to desktop.
 
 
-            By using NLTK for sentiment analysis (mainly VADER) & volume, I can extend the stalling conversation more precisely- complying with the scammer if he 
-            seems too angry or about to hang up -or- avoiding instructions from the scammer & stalling when they are in a calmer mood, 
-            further agitating them and driving up the call time.
+    By using NLTK for sentiment analysis (mainly VADER) & volume, I can extend the stalling conversation more precisely- complying with the scammer if he 
+    seems too angry or about to hang up -or- avoiding instructions from the scammer & stalling when they are in a calmer mood, 
+    further agitating them and driving up the call time.
 
-            I am planning on using multiple google numbers and essentially waiting for scam calls for call back numbers (I was hoping you might know of a more 
-            efficient process for scam number data collection). I am also still in the works of creating a program that will listen to the call or voicemail, 
-            verify scam via keywords and the presence of an automated voice, and pull both the call back number and information about the type of scam.
+    I am planning on using multiple google numbers and essentially waiting for scam calls for call back numbers (I was hoping you might know of a more 
+    efficient process for scam number data collection). I am also still in the works of creating a program that will listen to the call or voicemail, 
+    verify scam via keywords and the presence of an automated voice, and pull both the call back number and information about the type of scam.
 
-            I'm also utilizing previously recorded scam calls on youtube, there are a few famous YouTubers (such as KitBoga and Jim Browning) who frequently call
-            back scammers and mess with them.
+    I'm also utilizing previously recorded scam calls on youtube, there are a few famous YouTubers (such as KitBoga and Jim Browning) who frequently call
+    back scammers and mess with them.
             
             Jim Browning - YouTubehttps://www.youtube.com › JimBrowning
             Kitboga - YouTubehttps://www.youtube.com › channel.
 
-            I am taking YouTube's auto-generated subtitles from these channels and grouping common trigger words that are used by the scammer(from scammers script 
-            or general template), 
-            to train the proper pre-recorded responses from the same voice actor. 
+    I am taking YouTube's auto-generated subtitles from these channels and grouping common trigger words that are used by the scammer(from scammers script 
+    or general template), 
+    to train the proper pre-recorded responses from the same voice actor. 
 
-            Additionally, I will set up a virtual machine, so that I can give the appearance of complying with the scammers instructions while they run the scam. 
-            I am also in the process of creating a fake web page for a bank to log into while talking to the scammer. 
+    Additionally, I will set up a virtual machine, so that I can give the appearance of complying with the scammers instructions while they run the scam. 
+    I am also in the process of creating a fake web page for a bank to log into while talking to the scammer. 
 
