@@ -88,9 +88,9 @@ As most scammers follow a very similar script, I generally know some common proc
     I'm also utilizing previously recorded scam calls on youtube, there are a few famous YouTubers (such as KitBoga and Jim Browning) who frequently call
     back scammers and mess with them.
             
-            Jim Browning - YouTube https://www.youtube.com/c/JimBrowning › JimBrowning
+Jim Browning - YouTube https://www.youtube.com/c/JimBrowning › JimBrowning
             
-            Kitboga - YouTube      https://www.youtube.com/c/KitbogaShow/featured › Kitboga
+Kitboga - YouTube      https://www.youtube.com/c/KitbogaShow/featured › Kitboga
 
     I am taking YouTube's auto-generated subtitles from these channels and grouping common trigger words that are used by the scammer(from scammers script 
     or general template), 
