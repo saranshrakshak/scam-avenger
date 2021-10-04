@@ -2,6 +2,7 @@
 
 # ☢️NOTES :
 Set up webpage (later)about company
+Set up bank fake webpage
 FIGURE SHIT OUT ABOUT SECURITY
 set up go fund me eventually add support for scan scam (QR code 4 crypto/cashappe etc) on company webpage 
     maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
@@ -18,11 +19,11 @@ possibly recruit for paid online education course for elderly and young kids (sc
 
 
 # Scam Avenger
-Saransh Rakshak
-srakshak@berkeley.edu
+Saransh Rakshak | srakshak@berkeley.edu
 
-# __PROJECT DESCRIPTION:__
+# PROJECT DESCRIPTION:
 
+## Introduction:
 Scammers primarily target the elderly and young children - two age groups who are the most likely to succumb to high-pressure scam tactics and lose hundreds if not thousands. I have personally been bombarded by calls, asking to get a 'refund for my auto insurance' or 'court order house arrest unless payment by gift card', and I can see how it can easily excite or alarm somebody who may be unaware of the scam. 
 
 The initial call is automated, but the call back number almost always transfers to a call center in India or Nigeria. As they are spoofing for local area codes(so it doesn't show as 'scam likely') the number frequently changes, and cannot be reached after they leave a few voicemails and change to a new number.
@@ -31,8 +32,8 @@ This project will work towards calling back these numbers immediately, and talki
 
 My goal is, the more time the scammers talk to pre-recordings of me, the less they can spend scamming actual people for money.
 
-
-As most scammers follow a very similar script, I generally know the two main procedures they use:
+## Scammer Common Procedures:
+As most scammers follow a very similar script, I generally know some common procedures they use:
 
 1) Upon calling back the victim will be told either that they have won some sort of reward/refund- or- they will be threatened with legal action if they are unable to pay in gift cards. 
 
@@ -40,24 +41,34 @@ As most scammers follow a very similar script, I generally know the two main pro
 
 3) The scammer will either ...
 
-        A. (Visual Scam) Ask the victim to log into bank account, and using inspect element to change the visual values of their account funds, sill state the money will be withheld without payment
+        A. (Visual Scam 🖥️) Ask the victim to log into bank account, and using inspect element to change the visual 
+        values of their account funds, sill state the money will be withheld without payment
 
-        B. (Visual Scam) Ask the victim to log into a bank account. Here the scammer will transfer money quickly between savings and credit, giving the appearance of money loss, then stating money will be withheld without payment. --> ##(TOCTOU shit)
+        B. (Visual Scam 🖥️) Ask the victim to log into a bank account. Here the scammer will transfer money quickly between savings 
+        and credit, giving the appearance of money loss, then stating money will be withheld without payment. --> ##(TOCTOU shit)
 
-        C. (Refund Scam) Scammer will run a program on the Terminal/Command line that gives the appearance of money refund taking place, and that the victim has full control of the money transfer (no actual money transfer takes place). When the victim enters the amount to be refunded, an additional 0 will be added to the input giving the appearance that the victim has transferred x10 the asked for refund from the scammers account to the victims personal account. The scammer will then desperately beg the victim to transfer the money back via gift cards, stating that the victim cannot simply transfer back the 'money' via the old command line method or a bank transfer method, and will often negotiate a smaller amount in gift cards out of desperation for getting anything. Scammer may also use the inspect element on bank account webpage to edit the appearance that money has been transferred.
+        C. (Refund Scam 🪃) Scammer will run a program on the Terminal/Command line that gives the appearance of money refund taking place, 
+        and that the victim has full control of the money transfer (no actual money transfer takes place). When the victim 
+        enters the amount to be refunded, an additional 0 will be added to the input giving the appearance that the victim has 
+        transferred x10 the asked for refund from the scammers account to the victims personal account. The scammer will then 
+        desperately beg the victim to transfer the money back via gift cards, stating that the victim cannot simply transfer back the 
+        'money' via the old command line method or a bank transfer method, and will often negotiate a smaller amount in gift cards out
+        of desperation for getting anything. Scammer may also use the inspect element on bank account webpage to edit the appearance that
+        money has been transferred.
 
-        D. (Refund Scam) Ask the victim to log into bank account, and using inspect element to show that scammer 
+        D. (Refund Scam 🪃) Ask the victim to log into bank account, and using inspect element to show that scammer 
         has sent too much money and will lose their job, and that the victim must transfer gift cards to help the scammers 
         family survive (or any other desperate situation the scammer thinks up of).  
 
-        E. (Stolen Info Scam) Scammer will hide all files from the user's desktop, and state that the victim's comp
+        E. (Stolen Info Scam ℹ️) Scammer will hide all files from the user's desktop, and state that the victim's comp
         files/ personal information/bank account/etc. will be withheld until gift card payment is given. 
 
-        F. (Legal Action Scam) Scammer will call the victim threatening Gov action. 
+        F. (Legal Action Scam ⚖️) Scammer will call the victim threatening Gov action. 
         May pull up a fake webpage or inspect elements on victims bank account page stating money 
         will be withheld without gift card payment similar to the Refund Scam, or may hide files like in the Stolen Info Scam.
         
-            This is probably the most barbaric method in comparison to the others, but is still one of the most effective nonetheless. 
+            💢  This is probably the most barbaric method in comparison to the others, 
+                but is still one of the most effective nonetheless. 
 
 4) Scammer will then ask the victim to drive to a nearby store to purchase gift cards, and will stay on the phone with the victim throughout the process (I will play fake driving sounds and extend the drive time to increase conversation time).
 
