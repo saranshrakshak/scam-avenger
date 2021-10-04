@@ -41,17 +41,17 @@ As most scammers follow a very similar script, I generally know the two main pro
 
 3) The scammer will either ...
 
-A. (Visual Scam) Ask the victim to log into bank account, and using inspect element to change the visual values of their account funds, sill state the money will be withheld without payment
+        A. (Visual Scam) Ask the victim to log into bank account, and using inspect element to change the visual values of their account funds, sill state the money will be withheld without payment
 
-B. (Visual Scam) Ask the victim to log into a bank account. Here the scammer will transfer money quickly between savings and credit, giving the appearance of money loss, then stating money will be withheld without payment. --> ##(TOCTOU shit)
+        B. (Visual Scam) Ask the victim to log into a bank account. Here the scammer will transfer money quickly between savings and credit, giving the appearance of money loss, then stating money will be withheld without payment. --> ##(TOCTOU shit)
 
-C. (Refund Scam) Scammer will run a program on the Terminal/Command line that gives the appearance of money refund taking place, and that the victim has full control of the money transfer (no actual money transfer takes place). When the victim enters the amount to be refunded, an additional 0 will be added to the input giving the appearance that the victim has transferred x10 the asked for refund from the scammers account to the victims personal account. The scammer will then desperately beg the victim to transfer the money back via gift cards, stating that the victim cannot simply transfer back the 'money' via the old command line method or a bank transfer method, and will often negotiate a smaller amount in gift cards out of desperation for getting anything. Scammer may also use the inspect element on bank account webpage to edit the appearance that money has been transferred.
+        C. (Refund Scam) Scammer will run a program on the Terminal/Command line that gives the appearance of money refund taking place, and that the victim has full control of the money transfer (no actual money transfer takes place). When the victim enters the amount to be refunded, an additional 0 will be added to the input giving the appearance that the victim has transferred x10 the asked for refund from the scammers account to the victims personal account. The scammer will then desperately beg the victim to transfer the money back via gift cards, stating that the victim cannot simply transfer back the 'money' via the old command line method or a bank transfer method, and will often negotiate a smaller amount in gift cards out of desperation for getting anything. Scammer may also use the inspect element on bank account webpage to edit the appearance that money has been transferred.
 
-D. (Refund Scam) Ask the victim to log into bank account, and using inspect element to show that scammer has sent too much money and will lose their job, and that the victim must transfer gift cards to help the scammers family survive (or any other desperate situation the scammer thinks up of).  
+        D. (Refund Scam) Ask the victim to log into bank account, and using inspect element to show that scammer has sent too much money and will lose their job, and that the victim must transfer gift cards to help the scammers family survive (or any other desperate situation the scammer thinks up of).  
 
-E. (Stolen Info Scam) Scammer will hide all files from the user's desktop, and state that the victim's comp files/ personal information/bank account/etc. will be withheld until gift card payment is given. 
+        E. (Stolen Info Scam) Scammer will hide all files from the user's desktop, and state that the victim's comp files/ personal information/bank account/etc. will be withheld until gift card payment is given. 
 
-F. (Legal Action Scam) Scammer will call the victim threatening . May pull up a fake webpage or inspect elements on victims bank account page stating money will be withheld without gift card payment similar to the Refund Scam, or may hide files like in the Stolen Info Scam. This is probably the most barbaric method in comparison to the others, but is still one of the most effective nonetheless. 
+        F. (Legal Action Scam) Scammer will call the victim threatening . May pull up a fake webpage or inspect elements on victims bank account page stating money will be withheld without gift card payment similar to the Refund Scam, or may hide files like in the Stolen Info Scam. This is probably the most barbaric method in comparison to the others, but is still one of the most effective nonetheless. 
 
 4) Scammer will then ask the victim to drive to a nearby store to purchase gift cards, and will stay on the phone with the victim throughout the process (I will play fake driving sounds and extend the drive time to increase conversation time).
 
@@ -78,5 +78,6 @@ F. (Legal Action Scam) Scammer will call the victim threatening . May pull up a 
             or general template), 
             to train the proper pre-recorded responses from the same voice actor. 
 
-            Additionally, I will set up a virtual machine, so that I can give the appearance of complying with the scammers instructions while they run the scam. I am also in the process of creating a fake web page for a bank to log into while talking to the scammer. 
+            Additionally, I will set up a virtual machine, so that I can give the appearance of complying with the scammers instructions while they run the scam. 
+            I am also in the process of creating a fake web page for a bank to log into while talking to the scammer. 
 
