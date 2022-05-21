@@ -1,23 +1,4 @@
 
-
-# ☢️NOTES :
-Set up webpage (later)about company
-Set up bank fake webpage
-FIGURE SHIT OUT ABOUT SECURITY
-set up go fund me eventually add support for scan scam (QR code 4 crypto/cashappe etc) on company webpage 
-    maybe spend some of budget for hiring someone not retarded in photoship to make logo and cover photo
-
-can do links and emojis in README  ♋️
-
-contact FTC/find poc for scammer number database?
-
-idea for PART 2 :
-Scammer Recruiter - Beta
-Company that would hire these scammers after the call 
-pay them/bribe them for knowledge 
-possibly recruit for paid online education course for elderly and young kids (scam awareness, prevention, and spread of knowledge).
-
-
 # Scam Avenger
 Saransh Rakshak | srakshak@berkeley.edu
 
