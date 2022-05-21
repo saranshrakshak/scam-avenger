@@ -73,12 +73,12 @@ Jim Browning - YouTube https://www.youtube.com/c/JimBrowning › JimBrowning
             
 Kitboga - YouTube      https://www.youtube.com/c/KitbogaShow/featured › Kitboga
 
-    I am taking YouTube's auto-generated subtitles from these channels and grouping common 
-    trigger words that are used by the scammer(from scammers script 
-    or general template), 
-    to train the proper pre-recorded responses from the same voice actor. 
+I am taking YouTube's auto-generated subtitles from these channels and grouping common 
+trigger words that are used by the scammer(from scammers script 
+or general template), 
+to train the proper pre-recorded responses from the same voice actor. 
 
-    Additionally, I will set up a virtual machine, so that I can give the appearance of complying with 
-    the scammers instructions while they run the scam. I am also in the process of creating a fake web 
-    page for a bank to log into while talking to the scammer. 
+Additionally, I will set up a virtual machine, so that I can give the appearance of complying with 
+the scammers instructions while they run the scam. I am also in the process of creating a fake web 
+page for a bank to log into while talking to the scammer. 
 
