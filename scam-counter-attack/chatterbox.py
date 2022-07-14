@@ -1,10 +1,8 @@
-#file for general audio handling, conversion to text, volume and sentiment analysis
+# file for general audio handling, conversion to text, volume and sentiment analysis
 # install list
-# pip3 install pydub
-# pip3 install SpeechRecognition
-# pip3 install nltk
-# pip3 install ffmpeg, ffprobe, ffplay from command line
-# and download from https://ffmpeg.org/download.html
+# pip3 : pydub, SpeechRecognition, nltk,
+# ffmpeg, ffprobe, ffplay from command line
+# FFMPEG download https://ffmpeg.org/download.html
 # sentiment models
 # nltk.download("vader_lexicon")
 
@@ -15,6 +13,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 # changing format of incoming file from .m4a (or other) to .wav
 # returns a AudioSegment object
+
+
 def convert_to_wav(filename):
     filename = 'audio_files/' + filename
     file_type = filename.split(".")[1]
@@ -33,8 +33,11 @@ def convert_to_wav(filename):
             return filename.split(".")[0] + ".wav"
 
 # converting spoken words to text
+
+
 def transcribe_audio(wav_file):
-    if not wav_file: return False
+    if not wav_file:
+        return False
     recognizer = sr.Recognizer()
     # Import the audio file and convert to audio data
     audio_file = sr.AudioFile(wav_file)
@@ -43,10 +46,14 @@ def transcribe_audio(wav_file):
     return recognizer.recognize_google(audio_data)
 
 # sentiment analysis of speaker's text
+
+
 def analyze_text(text_file):
-    if not text_file: return False
+    if not text_file:
+        return False
     intensity = SentimentIntensityAnalyzer().polarity_scores(text_file)
     return intensity
+
 
 def get_volume(filename):
     return AudioSegment.from_file(filename).dBFS
